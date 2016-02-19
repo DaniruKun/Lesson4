@@ -1,10 +1,11 @@
 package lv.lessons.progmeistars._4p.interfaces;
 
 import java.util.Random;
-
 import lv.lessons.progmeistars._4p.classes.Bus;
 import lv.lessons.progmeistars._4p.classes.Car;
 import lv.lessons.progmeistars._4p.classes.Man;
+import lv.lessons.progmeistars._4p.classes.Woman;
+import lv.lessons.progmeistars._4p.interfaces.Person;
 
 public class Main {
 
@@ -18,10 +19,12 @@ public class Main {
 				int r = rndm.nextInt(1);
 				if (r == 0) {
 					Person p = new Woman();
+					Woman.name = "Miranda Grey";
 				} else {
 				Person p = new Man();
+				Man.name = "John Smith";
 				}
-				//Man.name = smth
+				
 				//or woman, choose randomly
 				//fill things like name or whatever
 				counter.count(p); //and process it
