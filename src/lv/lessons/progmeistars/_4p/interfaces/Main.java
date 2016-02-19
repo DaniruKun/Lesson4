@@ -26,14 +26,14 @@ public class Main {
 			}
 			if (args[i].equalsIgnoreCase("C")) {
 				if (Integer.getInteger(args[i+1]) <=5) {
-					Car c = new Car();
+					Car c = new Vehicle();
 					c.getPassengers();
 					
 				}
 			}
 			if (args[i].equalsIgnoreCase("B")) {
 				if (Integer.getInteger(args[i+1]) <=50) {
-					Bus b = new Bus();
+					Bus b = new Vehicle();
 					b.getPassengers();
 				}
 			}

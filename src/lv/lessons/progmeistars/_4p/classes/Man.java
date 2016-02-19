@@ -2,7 +2,7 @@ package lv.lessons.progmeistars._4p.classes;
 
 import lv.lessons.progmeistars._4p.interfaces.Person;
 
-public class Man implements Person{
+public abstract class Man implements Person{
 
 	public static String name;
 	
