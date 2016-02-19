@@ -15,10 +15,12 @@ public class Main {
 			//process arguments here, like:
 			if (args[i].equalsIgnoreCase("P")){
 				Random rndm = new Random();
-				int r = rndm.nextInt();
-				
+				int r = rndm.nextInt(1);
+				if (r == 0) {
+					Person p = new Woman();
+				} else {
 				Person p = new Man();
-				
+				}
 				//Man.name = smth
 				//or woman, choose randomly
 				//fill things like name or whatever
